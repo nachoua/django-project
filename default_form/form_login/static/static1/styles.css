@@ -1,0 +1,509 @@
+
+@font-face {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url(https://cdn.jsdelivr.net/npm/line-awesome@1/dist/line-awesome/fonts/la-solid-900.eot);
+    src: url(https://cdn.jsdelivr.net/npm/line-awesome@1/dist/line-awesome/fonts/la-solid-900.eot?#iefix) format("embedded-opentype"), url(https://cdn.jsdelivr.net/npm/line-awesome@1/dist/line-awesome/fonts/la-solid-900.woff2) format("woff2"), url(https://cdn.jsdelivr.net/npm/line-awesome@1/dist/line-awesome/fonts/la-solid-900.woff) format("woff"), url(https://cdn.jsdelivr.net/npm/line-awesome@1/dist/line-awesome/fonts/la-solid-900.ttf) format("truetype"), url(https://cdn.jsdelivr.net/npm/line-awesome@1/dist/line-awesome/fonts/la-solid-900.svg#fontawesome) format("svg")
+}
+.autoship-landing {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 0px 100px;
+}
+.globalHandler {
+    height: auto;
+    margin-bottom: -7px;
+}
+.globalHandler, .handler {
+    width: 100%;
+    position: relative;
+}
+.handler {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cookieBar {
+    position: fixed;
+    bottom: 20px;
+    left: 2%;
+    color: #313131;
+    background-color: rgba(255,255,255,.9);
+    width: 500px;
+    display: none;
+    z-index: 99998;
+    padding: 26px 30px;
+    font-size: 12px;
+    line-height: 1.3;
+    cursor: pointer;
+    box-shadow: 0 -4px 10px rgb(0 0 0 / 20%);
+    border-radius: 6px;
+}
+.lm.login-wrapper {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .1s;
+    will-change: opacity;
+    padding-bottom: 7vh;
+    padding-left: 3vw;
+}
+.desktop #back-top {
+    position: fixed;
+    bottom: 86px!important;
+    width: 40px!important;
+    height: 40px;
+    border-radius: 100%;
+    right: 12px;
+    z-index: 10;
+    background-color: rgba(255,255,255,.6);
+    box-shadow: 0 2px 26px rgb(0 0 0 / 40%);
+    transition: transform .12s ease-out;
+}
+.wrapper-search-suggest-bg {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.2);
+    z-index: 8;
+}
+.fb_reset {
+    background: none;
+    border: 0;
+    border-spacing: 0;
+    color: #000;
+    cursor: auto;
+    direction: ltr;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    text-shadow: none;
+    text-transform: none;
+    visibility: visible;
+    white-space: normal;
+    word-spacing: normal;
+}
+script {
+    display: none;
+}
+iframe {
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+iframe {
+    width: 0px;
+    height: 0px;
+}
+.autoship-landing .autoship-logo {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 40px;
+    flex: 0 0 auto;
+    flex-direction: row;
+   
+    background-image: url(auto4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    margin: 0px;
+    font-size: 70px
+
+}
+.autoship-landing-text .info-title {
+    font-family:  misfont, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #1970c2;
+    margin-bottom: 8px;
+}
+.autoship-landing li::before {
+    /* content: "!";*/
+    background-image: url(c.svg);
+    position: relative;
+    font-family: bilua-icons2;
+    color: #EC042C;
+    font-size: 20px;
+    margin-right: 5px;
+    top: 3px;
+}
+.autoship-landing-text .info-subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+dd, dl, h1, h2, h3, h4, li, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.autoship-landing .section1 .autoship-landing-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.autoship-landing .section1 .autoship-landing-list {
+    line-height: 1.4;
+}
+
+.autoship-landing .section1>.flex-row {
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 90px;
+}
+
+.flex-row {
+    width: 100%;
+    flex-direction: row!important;
+}
+.flex-column, .flex-row {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+}
+.autoship-landing .section1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin-bottom: 40px;
+}
+.autoship-landing .section1 .autoship-landing-text {
+    position: relative;
+    flex: 1 1 48%;
+    margin-bottom: 30px;
+    z-index: 1;
+}
+.autoship-landing .autoship-logo--image {
+    display: flex;
+    flex: 0 0 60px;
+    width: 150px;
+    height: 150px;
+    background: url(autoc.svg) no-repeat;
+    background-size: contain;
+    margin-right: 0;
+    position: relative;
+}
+.autoship-landing .section2 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.autoship-landing .section2 .how-step:nth-of-type(1)>.step-image {
+    background-image: url(autoship-1.jpg);
+}
+
+.autoship-landing .section2 .how-step>.step-image {
+    width: 200px;
+    height: 200px;
+    flex: 0 0 200px;
+    border-radius: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #e9e9e9;
+    box-sizing: content-box!important;
+    justify-content: center;
+    margin: auto auto 15px;
+    background-size: cover;
+}
+.autoship-landing .section2 .how-step:nth-of-type(2)>.step-image {
+    background-image: url(autoship-2.jpg);
+}
+.autoship-landing .section2 .how-step:nth-of-type(3)>.step-image {
+    background-image: url(autoship-3.jpg);
+}
+.autoship-landing .section2 .how-step>p {
+    padding: 0 40px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.autoship-landing .section2 .info-title {
+    color: #EC042C;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.autoship-landing .section3 .autoship-landing-button {
+    margin: 30px auto;
+    width: 220px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.button-light.coral {
+    background-color: #EC042C ;
+    border-color: #EC042C ;
+    color: #fff;
+}
+.button-light.coral:hover {
+
+    background-color: #1970c2 ;
+}
+.autoship-landing .section3 .autoship-landing-button .button-text {
+    font-family: misfont, Roboto, Helvetica, Arial, sans-seri;
+    font-size: 18px;
+}
+.button-light .button-text {
+    transition: none;
+    padding: 0 0 1px;
+    font-size: 13px;
+    letter-spacing: .02rem;
+    text-align: left;
+    margin: 0;
+    font-weight: 500;
+}
+.autoship-landing .section3 {
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+}
+.button-light, .button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.autoship-landing-text .info-title {
+    font-family: misfont, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #1970c2;
+    margin-bottom: 8px;
+}
+.autoship-landing .section3 .autoship-landing-text {
+    padding: 0 300px;
+    text-align: center;
+}
+.top-brands .top-brands-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.top-brands-wrapper .brand-image.brand-royal-canin {
+    order: 1;
+    background-image: url(royal-canin.jpg);
+}
+
+.top-brands-wrapper .brand-image:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+    filter: brightness(1);
+    z-index: 2;
+}
+.top-brands-wrapper .brand-image {
+    width: 122px;
+    height: 80px;
+    background-position: center center!important;
+    background-repeat: no-repeat!important;
+    transition: transform .15s ease,box-shadow .25s ease-in-out;
+    background-size: 110px!important;
+    background: #fff;
+    border-radius: 6px;
+    margin: 0 8px;
+}
+a, a:active, a:focus, a:hover, a:link, a:visited {
+    color:  #4b4b4b;
+    text-decoration: none;
+}
+.top-brands-wrapper .brand-image.brand-eukanuba {
+    order: 4;
+    background-image: url(eukanuba.png);
+}
+.top-brands-wrapper .brand-image.brand-acana {
+    order: 5;
+    background-image: url(acana.jpg);
+}
+.top-brands-wrapper .brand-image.brand-orijen {
+    order: 6;
+    background-image: url(orijen.jpg);
+}
+.top-brands-wrapper .brand-image.brand-taste-of-the-wild {
+    order: 7;
+    background-image: url(taste-of-the-wild.jpg);
+}
+/* test panel css */
+h2 {
+     /*font-family: Arial, Verdana; */ 
+     /*font-family: misfont, Roboto, Helvetica, Arial, sans-serif;*/
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    color: #1970c2;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.accordion-section .panel-default .panel-heading {
+    /*border: 0;
+    width: 850px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 15px;
+    border-radius: 15px;
+    background-color: #f4f4f4;
+    padding: 0;*/
+   
+       /* position: relative;*/
+        display: flex;
+        padding: 0;
+        margin: 0 16px 32px 0;
+        border: 1px solid #e0e0e0;
+        line-height: 1.45;
+        background-color: #fff;
+        flex: 0 1 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        font-size: 14px;
+        border-bottom-width: 2px;
+        border-bottom-color: #d0d0d0;
+        border-radius:  10px;
+        transition: border-color .5s ease-in;
+        box-sizing: border-box!important;
+
+}
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    font-style: italic;
+    font-size: medium;
+    font-weight: bold;
+    font-family:  misfont, Roboto, Helvetica, Arial, sans-serif;
+}
+.accordion-section .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 2.2rem;
+    content: "\f106";
+    color: #1970c2;
+    float: right;
+    margin-top: -12px;
+}
+.accordion-section .panel-default .panel-title a.collapsed:after {
+    content: "\f107";
+}
+.accordion-section .panel-default .panel-body {
+    font-size: 1.2rem;
+   
+}
+/* css style panel*/
+/*.accordion-section clearfix mt-3 ,
+.section4 {
+    padding: 0 10%;
+} */
+/* .panel-heading p-3 mb-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 4;
+    opacity: 0;
+    display: block;
+}*/
+.panel-group {
+    padding: 0 10%;
+    
+}
+.iconn {
+    display: block;
+
+}
+.ticon {
+    display: flex;
+    justify-content: space-between;
+
+}
+.autoship-landing .autoship-landing-text.title3 {
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    font-family: var(--titlef);
+    font-size: 24px;
+    padding: 0 30%;
+    text-align: center;
+    margin-right: 30px;
+}
+.autoship-landing-text
+{
+    margin-right: 80px;
+}
+.autoship-logo--icon {
+        /*margin-right: 30px;*/
+        
+}
+.big-text{
+    color:#1970c2 ;
+    display: flex;
+}
+.order {
+   color: #EC042C;
+   font-size: 29px;
+   font-weight: bold;
+}
+.autoship-logo--text {
+    display: flex;
+    margin-right: 150px;
+
+}
+.autoship-logo--image {
+    margin-right: 190px;
+}
+
+.info-title {
+    padding: 0px 0px 80px 0px;
+    text-align: center;
+
+}
+.flex-row how-steps {
+
+}
+
+element.style {
+}
+.flex-column, .flex-row {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+}
+.flex-row {
+    width: 100%;
+}

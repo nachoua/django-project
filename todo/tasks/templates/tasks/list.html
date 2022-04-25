@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+    </head>
+    <body>
+    <img src="{% static 'edgy.png' %}"/>
+        <h3 class="edgy">Getting Started</h3>
+        <form method="POST" action="/">
+                {% csrf_token %}
+                {% comment %} <p>{{form.title}}</p> {% endcomment %}
+                <div class="flex">
+                    <p>{{form.complete}}</p>
+                {% comment %} {% for task in tasks %} {% endcomment %}
+                    {% if form.complete == True %}
+                        <strike class="complete">{{form.title}}</strike>
+                    {% else %} 
+                        <span class="span">{{form.title}}</span>
+                    {% endif %}
+                   </div> 
+                {% comment %} {% endfor %} {% endcomment %}
+                
+            {% comment %} <input type="submit" name="Create Task"> {% endcomment %}
+        </form>
+        {% for task in tasks %}
+            <div class="all">
+                <a class="update" href="{% url 'update_task' task.id %}">update</a>
+                {% comment %} <img class="sup" src="{% static 'sup.jpg' %}"/> {% endcomment %}
+                <a class="delete" href="{% url 'delete_task' task.id %}">delete</a>
+                {% if task.complete == True %}
+                    <strike class="complete">{{task}}</strike>
+                {% else %} 
+                    <span class="span">{{task}}</span>
+                {% endif %}
+            </div>
+        {% endfor %}
+        {% block content %}
+        {% endblock %}
+      
+
+        <script src="" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+        
+       
+    </head>
+    <body>
+        
+       <h1> <a href="{% url 'logoutt' %}"> hello hello nachoua </a>
+       </h1>
+       <h2> <a href="{% url 'logoutt' %}"> abbaoui nachoua </a> 
+       </h2>
+       <h3> welecom to Login Page </h3>
+       
+        {% block content %}
+        {% endblock %}
+       
+          
+       <form class="site" action="/form_login/nachoua/" method="post">
+            {% csrf_token %}
+            {{form}} <p class="p">Life is a beautiful gift given by God to us.<br> The meaning of life is to exist in the World. Life is the only aspect that distinguishes living creatures from non-living creatures. While life is a blessing by God, not all the people understand its value.<br> While some people prefer to live their lives independently, many don't have this privilege and spend their life as a slave.<br> It is always our choice to decide how to live our life.
+
+However, <br>all individuals need to understand the importance of life and live it cheerfully without any regrets.<br> Life should be meaningful; otherwise, a person won't be able to survive.<br> So, in this article, we will learn about the importance of life and how to live a meaningful life.</p>
+            <input type="submit" value="Loginn"> 
+            <a href="{% url 'logoutt' %}">sign up</a>
+            
+       </form>      
+         
+        
+ 
+
+       
+
+       {% comment %} <div class="coucou"> {% endcomment %}
+            {% comment %} {% for login in Login %} {% endcomment %}
+                {% comment %} <p>{{ login.usernam }}</p> {% endcomment %}
+                {% comment %} <p>{{ login.password }}</p> {% endcomment %}
+            {% comment %} {% endfor%} {% endcomment %}
+       {% comment %} </div {% endcomment %}
+       
+        
+      
+    
+    </body>
+</html>

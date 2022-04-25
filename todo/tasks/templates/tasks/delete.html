@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <img src="{% static 'edgy.png' %}"/>
+        <h3 class="edgy">Delete Page</h3>
+        <p class="are">Are you sure you want to delete "{{item}}"?</p>
+        <a class="a" href ="{% url 'list' %}">cancel</a>
+        <form method="POST" action="">
+            {% csrf_token %}
+            <input class="btn" type="submit" name="confirm" value="Delete">
+        </form>
+        <script src="http://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script>
+            swal("Are you sure you want to delete ?");
+        </script>
+    </body>
+</html>
+
+
+
+
+
+

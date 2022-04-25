@@ -1,0 +1,77 @@
+body{
+
+    background-color: brown;
+    background-image: url(auto2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.site{
+    border:5px solid #e79666;
+    margin-top:250px;
+    padding:80px;
+    background-color:#d9c4b1a6;
+}
+.site input, .site textarea{
+    display:block;
+     
+     /* padding:50px; */
+
+}
+#id_username{
+    margin-left:270px;
+}
+label{
+     margin-left:200px;
+}
+input{
+      margin-left:270px;
+      padding:9px;
+      background-color:#f4cb9b;
+      border-radius:6px;
+      margin-top:12px
+}
+
+.errorlist{
+
+    padding: 10px;
+    list-style-type: none;
+    border:1px solid #a74f27;
+    color:#ff5722;
+    margin:10px 0;
+
+}
+span.helptext{
+    color:grey;
+}
+a{
+    margin-left:319px;
+    color:black;
+    font-size:26px;
+}
+p{
+    font-size:16px;
+    margin-left:589px;
+    color:#bd5f2d;
+    margin-top:-140px;
+     font-weight: bold; 
+    font-family: cursive;
+    
+}
+
+.site input[type="submit"]
+{
+    background-color: #e79666;
+    color:white;
+    padding:10px 75px;
+    margin-top:-100px;
+}
+h3{
+    font-size: 38px;
+    font-family: cursive;
+    margin-left: 500px;
+    font-weight: bold;
+    color:#bd5f2d;
+   
+}
+
+
